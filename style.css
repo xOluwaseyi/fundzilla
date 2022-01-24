@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  font-family: "Poppins", Tahoma, sans-serif;
+}
+
+/* HEADER */
+
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border-bottom: 3px solid black; */
+}
+
+#brand {
+  font-family: "Abril Fatface", cursive;
+  color: rgb(8, 8, 151);
+  font-size: 1.6em;
+}
+
+header nav li {
+  margin: 0 25px;
+  color: black;
+}
+
+header nav li:first-child {
+  margin-left: 0px;
+}
+
+header nav li:last-child {
+  margin-right: 0px;
+}
+.sign-up {
+  display: flex;
+  align-items: center;
+}
+
+.link-btn {
+  margin-left: 30px;
+  width: auto;
+  background-color: rgb(8, 8, 151);
+  padding: 10px 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* MAIN BODY */
+main {
+  height: 85vh;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+main::after {
+  content: "";
+  width: 100%;
+  height: 85vh;
+  background-image: linear-gradient(90deg, transparent, blue, transparent);
+  /* background-color: rebeccapurple; */
+  position: absolute;
+  opacity: 0.3;
+  left: -20;
+}
+
+.main-images {
+  width: 45%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* .main-images img {
+  height: 100%;
+  position: absolute;
+  top: 55px;
+} */
+
+.circle {
+  opacity: 0.5;
+  position: absolute;
+}
+.dotted {
+  position: absolute;
+  /* opacity: 0.7;/ */
+  height: 300px;
+  width: 300px;
+  left: 0;
+  top: 200px;
+}
+
+.m-image {
+  position: absolute;
+  height: 500px;
+}
+
+.main-text {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text p {
+  font-size: 1.7em;
+}
+
+.main-btns {
+  margin-top: 30px;
+}
+
+.main-btn {
+  flex-direction: row;
+  margin: 0;
+}
+.s-main-btn {
+  flex-direction: row;
+  margin-left: 20px;
+  width: auto;
+  background-color: transparent;
+  border: rgb(8, 8, 151) 1px solid;
+  padding: 10px 30px;
+  color: rgb(8, 8, 151);
+  border-radius: 10px;
+}
+
+.s-main-btn:hover {
+  background-color: rgb(8, 8, 151);
+  color: white;
+}
+
+/* Details */
+
+.details {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.details-text {
+  margin: 30px 0;
+}
+.details-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-card {
+  width: auto;
+  margin: 50px;
+}
+
+.details-card img {
+  height: 100px;
+  width: 100px;
+}
+
+/* download */
+.download {
+  height: auto;
+  width: 100%;
+  background-color: rgb(230, 227, 227);
+}
+
+.download-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.download-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.download-card img {
+  width: 400px;
+  height: 400px;
+}
+
+.download-details {
+  margin-top: 20px;
+}
+
+.download1 {
+  background-color: white;
+  width: auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.download-card .link-btn {
+  margin-left: 0%;
+}
+
+/* subscribe */
+.subscribe {
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-text {
+  text-align: center;
+  margin: 30px;
+}
+
+.subscribe-email {
+  background-color: wheat;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.subscribe-email input {
+  outline: none;
+  background-color: wheat;
+  border: 1px grey solid;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+}
+
+.subscribe-email input::placeholder {
+  color: black;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+/* sponsors */
+
+.sponsors {
+  width: 100%;
+  background-color: rgb(250, 249, 249);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.sponsors p {
+  font-size: 1.5em;
+}
+
+.sponsors-images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sponsors-images img {
+  height: 90px;
+  width: auto;
+  padding: 20px;
+}
