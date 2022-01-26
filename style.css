@@ -401,6 +401,7 @@ main::after {
     margin-top: 10px;
     font-size: 0.65em;
     width: 100%;
+    padding: 0 50px;
   }
 
   .main-btns {
@@ -415,7 +416,6 @@ main::after {
   /* main images */
   .main-images {
     width: 30%;
-    /* height: 50%; */
   }
 
   .circle {
@@ -431,6 +431,25 @@ main::after {
   .m-image {
     height: 380px;
     top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-text .main-images {
+    width: 20%;
+  }
+
+  .circle {
+    height: 220px;
+  }
+
+  .dotted {
+    height: 170px;
+    width: 170px;
+  }
+
+  .m-image {
+    height: 320px;
   }
 }
 
@@ -594,6 +613,24 @@ main::after {
   }
 }
 
+@media screen and (max-width: 490px) {
+  .download-card {
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .download-app {
+    text-align: center;
+  }
+
+  .download-card2 {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+}
+
 /* subscribe */
 .subscribe {
   height: 300px;
@@ -638,8 +675,14 @@ main::after {
   padding-left: 3px;
 }
 
-.subscribe .link-btn {
+.email-btn {
   margin-left: 10px;
+  width: auto;
+  background-color: rgb(8, 8, 151);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 900px) {
@@ -658,9 +701,24 @@ main::after {
 }
 
 @media screen and (max-width: 600px) {
-  .subscribe-email input {
-    width: 250px;
-    height: 30px;
+  .subscribe-email {
+    padding: 8px 17px;
+  }
+
+  .subscribe-ema il input {
+    width: 80px;
+    height: 20px;
+  }
+
+  .subscribe-email input::placeholder {
+    color: black;
+    padding-left: 0;
+    font-size: 0.6em;
+  }
+
+  .email-btn {
+    padding: 4px 8px;
+    font-size: 0.6em;
   }
 }
 
@@ -692,10 +750,20 @@ main::after {
   padding: 15px;
 }
 
+@media screen and (min-width: 671px) and (max-width: 900px) {
+  .sponsors-images img {
+    height: 65px;
+  }
+}
+
 @media screen and (max-width: 670px) {
+  .sponsors-images {
+    flex-direction: column;
+  }
+
   .sponsors-images img {
     height: 56px;
-    padding: 5px;
+    margin-bottom: 10px;
   }
 }
 
@@ -826,16 +894,15 @@ footer i:hover {
   }
 
   .card2 {
-    flex-direction: row;
+    display: block;
     width: 100%;
-    justify-content: start;
-    align-items: center;
-    height: 100px;
+    height: auto;
     margin-bottom: 20px;
   }
 
   .card2 p {
     width: 90%;
+    margin-bottom: 15px;
   }
 
   .other-card {
