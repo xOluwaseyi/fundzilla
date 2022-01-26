@@ -911,3 +911,24 @@ footer i:hover {
     width: 40%;
   }
 }
+
+.footer-credit {
+  border-top: 3px solid white;
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 15px;
+  font-size: 0.8rem;
+}
+
+.footer-credit a {
+  color: yellow;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.footer-credit p {
+  padding: 5px;
+}
