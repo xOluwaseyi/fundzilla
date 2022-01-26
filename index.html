@@ -10,12 +10,6 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- google font -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300&display=swap"
-      rel="stylesheet"
-    /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,55 +23,71 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   </head>
   <body>
     <!-- header start -->
     <header>
-      <div id="brand">Fundzilla</div>
       <nav>
-        <ul class="header-ul">
+        <div class="brand">Fundzilla</div>
+
+        <button class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <ul class="header-ul" id="header-ul">
           <li><a href="#">Business</a></li>
           <li><a href="#">Prices</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">About</a></li>
         </ul>
+        <div class="sign-up" id="sign-up">
+          <a href="#" class="log-in">Log in</a>
+          <a href="#" class="link-btn">Sign Up</a>
+        </div>
       </nav>
-      <div class="sign-up">
-        <p>Log in</p>
-        <a href="#" class="link-btn">Sign Up</a>
-      </div>
     </header>
 
     <!-- main start -->
-    <main>
-      <div class="main-text">
-        <h5 style="color: blue">REGISTER NOW AND GET FREE DISCOUNTS</h5>
-        <h1>ELECTRONIC TRANSACTIONS</h1>
-        <p>Should Be Fun.</p>
-        <h5 style="margin: 10px 0">
-          Make transactions with ease to anywhere around the world with <br />
-          your mobile device.
-        </h5>
-        <div class="main-btns">
-          <a href="#" class="link-btn main-btn">Get started</a>
-          <a href="#" class="link-btn s-main-btn">Learn More</a>
+    <section>
+      <main>
+        <!-- main texts -->
+        <div class="main-text">
+          <h5>REGISTER NOW AND GET FREE DISCOUNTS</h5>
+          <h1>Electronic Transactions</h1>
+          <p>Should Be Fun.</p>
+          <h6>
+            Make transactions with ease to anywhere around the world with your
+            mobile device.
+          </h6>
+
+          <!-- main btns -->
+          <div class="main-btns">
+            <a href="#" class="link-btn main-btn hover-btn">Get started</a>
+            <a href="#" class="link-btn s-main-btn hover-btn">Learn More</a>
+          </div>
         </div>
-      </div>
-      <div class="main-images">
-        <img src="/images/circle.png" alt="" class="circle" />
-        <img src="/images/dottedlines.png" alt="" class="dotted" />
-        <img src="images/main-image1.png" alt="" class="m-image" />
-      </div>
-    </main>
+
+        <!-- main images -->
+        <div class="main-images">
+          <img src="/images/circle.png" alt="img-circle" class="circle" />
+          <img src="/images/dottedlines.png" alt="img-dotted" class="dotted" />
+          <img src="images/main-image1.png" alt="img-main" class="m-image" />
+        </div>
+      </main>
+    </section>
 
     <!-- details start -->
 
     <section class="details">
       <div class="details-text">
-        <h2>How it works</h2>
+        <h2>How it works:</h2>
         <p>
           Make transactions, payments and send money to your loved ones with our
-          <br />
           e-wallet system anytime on your mobile device.
         </p>
       </div>
@@ -85,26 +95,17 @@
         <div class="details-card">
           <img src="images/user-details.jpg" alt="" />
           <p style="font-weight: bold">Ease of access</p>
-          <p>
-            Easy to use and user <br />
-            friendly.
-          </p>
+          <p>Easy to use and user friendly.</p>
         </div>
         <div class="details-card">
           <img src="images/security-details.jpg" alt="" />
           <p style="font-weight: bold">Data security</p>
-          <p>
-            Send money seamlessly with <br />
-            end to end encryption.
-          </p>
+          <p>Send money seamlessly with end to end encryption.</p>
         </div>
         <div class="details-card">
           <img src="images/card-details.jpg" alt="" />
           <p style="font-weight: bold">Add cards</p>
-          <p>
-            Add and manage multiple cards <br />
-            for your transactions.
-          </p>
+          <p>Add and manage multiple cards for your transactions.</p>
         </div>
       </div>
     </section>
@@ -114,18 +115,15 @@
     <section class="download">
       <div class="download-all">
         <div class="download-card">
-          <img src="images/iphone.png" alt="" />
+          <img src="images/iphone.png" alt="phone" />
           <div>
             <h1>Get the App</h1>
-            <p>
-              Download the Fundzilla mobile app for both android <br />
-              and ios
-            </p>
+            <p>Download the Fundzilla mobile app for both Android and iOS.</p>
             <div class="download-details">
-              <a href="#" class="download1">
+              <a href="#" class="download-btn">
                 <i class="fa fa-apple" aria-hidden="true"></i> iOS App Store
               </a>
-              <a href="#" class="download1">
+              <a href="#" class="download-btn">
                 <i class="fa fa-play" aria-hidden="true"></i> Google Play Store
               </a>
             </div>
@@ -133,13 +131,10 @@
         </div>
         <div class="download-card">
           <div>
-            <h1>
-              Manage your account from <br />
-              your mobile device
-            </h1>
+            <h1>Manage your account from your mobile device.</h1>
             <p>
-              Make transactions with ease to anywhere around the world <br />
-              with your mobile device
+              Make transactions with ease to anywhere around the world with your
+              mobile device
             </p>
             <div style="margin-top: 25px">
               <a href="#" class="link-btn">Get started</a>
@@ -203,5 +198,60 @@
         />
       </div>
     </section>
+
+    <footer>
+      <div class="footer-main">
+        <!-- footer 1 -->
+        <div class="footer-card card2">
+          <div>
+            <h3 class="brand footer-brand">Fundzilla</h3>
+            <p>
+              Make transactions with ease to anywhere around the world with your
+              mobile device.
+            </p>
+          </div>
+          <div>
+            <h4>FOLLOW US:</h4>
+            <a href="#"><i class="fab fa-facebook-f"></i> </a>
+            <a href="#"><i class="fab fa-twitter"></i> </a>
+            <a href="#"><i class="fab fa-instagram"></i> </a>
+            <a href="#"><i class="fab fa-linkedin-in"></i> </a>
+          </div>
+        </div>
+
+        <!-- footer 2 -->
+        <div class="footer-card other-card">
+          <h4>OTHER LINKS</h4>
+          <ul>
+            <li><a href="#">Subscribe to our newsletter</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Venue charge</a></li>
+            <li><a href="#">Terms and condition</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- footer 3 -->
+        <div class="footer-card">
+          <h4>SUPPORT:</h4>
+          <ul>
+            <li>
+              <a href="#">Support centre</a>
+            </li>
+            <li>
+              <a href="#">Customer care</a>
+            </li>
+            <li>
+              <a href="#">Send us a mail</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
