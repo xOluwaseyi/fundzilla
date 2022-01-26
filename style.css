@@ -476,6 +476,7 @@ main::after {
 
 .details-card {
   margin: 30px;
+  width: 31%;
 }
 
 .details-card img {
