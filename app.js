@@ -6,3 +6,10 @@ hamburger.addEventListener("click", () => {
   headerUL.classList.toggle("show");
   signupUL.classList.toggle("show");
 });
+
+
+var load = document.getElementById("loading");
+
+function loader() {
+  load.style.display = "none";
+}

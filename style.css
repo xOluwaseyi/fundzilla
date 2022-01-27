@@ -20,6 +20,40 @@ body {
   font-family: "Poppins", Tahoma, sans-serif;
 }
 
+/* LOADER */
+#loading {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-loader {
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* HEADER */
 
 nav {
