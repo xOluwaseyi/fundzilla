@@ -968,10 +968,11 @@ footer i:hover {
 }
 
 @media screen and (max-width: 730px) {
-.footer-credit {
-  font-size: 0.6rem;
-}
+  .footer-credit {
+    font-size: 0.6rem;
+  }
 
-.footer-credit a { 
-font-size: 0.7rem;
+  .footer-credit a {
+    font-size: 0.7rem;
+  }
 }
